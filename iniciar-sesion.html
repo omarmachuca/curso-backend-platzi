@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+     
+        .header__menu{
+            margin-right: 60px;
+        }
+
+        .header__menu ul{
+            display: none;
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+            margin: 0px 0px 0px -14px;
+        }
+
+        .header__menu:hover ul, ul:hover{
+            display: block;
+        }
+
+        .header__menu li {
+            margin: 10px 0px;
+        }
+
+        .header__menu li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .header__menu li a:hover{
+            text-decoration: underline;
+        }
+        .header__menu--profile{
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header__menu--profile img{
+            margin-right: 8px;
+            width: 40px;
+        }
+  
+        .header__menu--profile p{
+            margin: 0px;
+            color: white;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./logo_platzi.png">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="./user-icon2.png" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="./">Cuenta</a></li>
+                <li><a href="./">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+        <section class="login"> 
+            <section class="login__container">
+                <h2>Inicia Sesión</h2>
+                <form class="login__container--form">
+                    <input class="input" type="text" placeholder="Correo">
+                    <input class="input" type="password" placeholder="Contraseña">
+                    <button class="button">Iniciar Sesión</button>
+                    <div class="login__container--remember-me">
+                        <label>
+                            <input type="checkbox" id="cbox1" value="checkbos">Recuérdame
+                         </label>
+                        <a href="/">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+                <section class="login__container--social-media">
+                    <div><img src="assets/google-icon.png" alt="Google">Iniciar sesión con Google</div>
+                    <div><img src="assets/twitter-icon.png" alt="Twitter">Iniciar sesión con Twitter</div>
+                </section>
+                <p class="login__container--register"> No tienes ninguna cuenta <a href="./">Registrate</a>  </p>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <a href="/">Terminos de uso</a>
+            <a href="/">Declaración de Privacidad</a>
+            <a href="/">Centro de Ayuda</a>
+        </footer>
+
+
+</body>
+</html> 

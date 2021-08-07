@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+    body{
+        display: flex;
+        /*background: red;*/
+        height: 100vh;
+        flex-direction: column;
+        flex-flow: column;
+        font-size: 16px;
+    }
+
+    .header{
+        outline: 1px solid gold;
+        background: rgba(100, 24, 100, 0.7);
+        height: 3rem;
+    }
+
+    .Menu{
+        display: flex;
+    }
+
+    .Menu-item{
+        list-style: none;
+        flex: 1;
+        outline: 1px solid cyan;
+        line-height: 3rem;
+        text-align: center;
+        transition: flex 0.5s;
+    }
+
+    .Menu-item:first-child{
+        background: steelblue;
+    }
+
+    .Menu-item:nth-child(2){
+        background:seagreen;
+    }
+
+    .Menu-item:nth-child(3){
+        background:royalblue;
+    }
+
+    .Menu-item:nth-child(4){
+        background:violet;
+    }
+
+
+    .Menu-item:hover{
+        flex:8;
+    }
+
+    .conteiner{
+        display: flex;
+        height: inherit;
+    }
+
+    .content{
+        outline: 1px solid cyan;
+        flex: 1;
+
+    }
+
+    .aside{
+        outline: 1px solid magenta;
+        flex: 0 0 25%;
+    }
+
+    .footer{
+        
+        outline: 1px solid salmon;
+        background: rgba(100, 24, 100, 0.7);
+        height: 6rem;
+        margin-top: auto;
+    }
+</style>
+<body>
+
+    <header class="header">
+         <ul class="Menu">
+            <li class="Menu-item">Home</li>
+            <li class="Menu-item">Galley</li>
+            <li class="Menu-item">About</li>
+            <li class="Menu-item">Contact</li>
+        </ul>
+    </header>
+
+    <section class="conteiner">
+        <section class="content">Content</section>
+        <aside class="aside">Aside</aside>
+    </section>
+
+    <footer class="footer">Footer</footer>
+
+</body>
+</html>
